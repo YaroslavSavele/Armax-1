@@ -1,0 +1,86 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'libs';
+@import 'global';
+
+.header{
+    &__inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 84px;
+            background: #FAF6F6;
+        }
+    &__burger {
+        width: 39px;
+        height: 35px;
+        border: none;
+        cursor: pointer;
+    }
+    &__contacts {
+        height: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-right: 84px;
+        color: $default;
+        
+    }    
+    
+}
+
+.menu{
+    &__list {
+        display: flex;
+        }
+    &__item {
+        padding-right: 51px;
+    }
+    &__link {
+        @extend %main-font;
+        color: $default;
+    }    
+}
+.phone {
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    padding-left: 24px;
+    background: url(../images/phone-icon.svg) no-repeat 0% 50%;
+}
+.email {
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    padding-left: 24px;
+    background: url(../images/envelop-icon.svg) no-repeat 0% 50%;
+}
+.hero {
+    margin-left: 95px;
+    &__top {
+        height: 430px;
+        margin-bottom: 75px;
+        padding: 355px 0 27px 70px; 
+        background: url(../images/ферма1.jpg) no-repeat,
+                    url(../images/ферма2.jpg) no-repeat 100% 50%;
+    }
+    &__bottom {
+        height: 436px;
+        padding: 355px 0 27px 70px;
+        background: url(../images/Транс1.jpg) no-repeat,
+                    url(../images/Транс2.jpg) no-repeat 100% 50%;
+    }
+    &__title {
+        //display: block;
+        //min-width: 800px;
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 49px;
+        color: #F1E7E7;
+        background: rgba(45, 36, 36, 0.4);
+    }
+   
+}
