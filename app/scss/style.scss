@@ -40,6 +40,9 @@
     &__link {
         @extend %main-font;
         color: $default;
+        &:hover {
+                color: #000000;
+            }
     }    
 }
 .phone {
@@ -58,6 +61,7 @@
 }
 .hero {
     margin-left: 95px;
+    margin-bottom: 100px;
     &__top {
         height: 430px;
         margin-bottom: 75px;
@@ -72,8 +76,6 @@
                     url(../images/Транс2.jpg) no-repeat 100% 50%;
     }
     &__title {
-        //display: block;
-        //min-width: 800px;
         padding: 5px 10px;
         border-radius: 5px;
         font-weight: 700;
@@ -81,6 +83,162 @@
         line-height: 49px;
         color: #F1E7E7;
         background: rgba(45, 36, 36, 0.4);
+        &:hover {
+                color: tomato;
+            }
     }
-   
+}
+
+.equipment {
+    margin-left: 95px;
+    &__title {
+        margin-left: 44px;
+    }
+    &__galery {
+        margin: 33px 22px 96px 44px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.card__img {
+    width: 370px;
+    height: 322px;
+    margin-bottom: 16px;
+}
+.card__link {
+    color: $default;
+    font-size: 24px;
+    line-height: 29px;
+    &:hover {
+        color: #000000;
+        font-weight: 700;
+    }
+}
+
+.footer {
+    &__inner {
+        height: 84px;
+        padding: 24px 200px;
+    }
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #FAF6F6;
+        }
+    &__logo {
+        display: flex;
+        font-size: 16px;
+        line-height: 20px;
+        color: $default;
+        img {
+            margin-right: 5px;
+        }
+    }     
+}
+
+.side-menu {
+    position: absolute;
+    left: 61px;
+    top: 31px;
+    max-width: 901px;
+    width: 100%;
+    min-height: 557px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    z-index: 5;
+    box-shadow: -2px 3px 17px 0px #000;
+    transition: all 0.5s;
+    &.side-menu--close {
+            transform: translateX(-300%);
+        }
+    &__close {
+        position: absolute;
+        top: 10px;
+        right: 12px;
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+    }
+    &__content {
+        margin-top: 51px;
+        margin-left: 26px;
+        display: flex;
+    }
+    &__column {
+        max-width: 220px;
+        margin-right: 26px;
+    }
+    &__list {
+        margin-left: 20px;
+    }
+    h4 {
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 14px;
+    }
+    h5 {
+        font-size: 14px;
+        line-height: 17px;
+        font-weight: normal;
+        margin-bottom: 14px;
+    }
+    &__item {
+        margin-bottom: 14px;
+    }
+    &__link {
+        color: $default;
+        font-size: 14px;
+        line-height: 17px;
+        &:hover {
+            color: #000;
+        }
+    }
+}
+
+.solution {
+    margin: 45px 86px 0 120px;
+    &__title {
+        margin-bottom: 32px;
+    }
+    &__promo {
+        font-size: 16px;
+        line-height: 20px;
+        color: $default;
+        margin-bottom: 40px;
+    }
+    &__images {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 52px;
+    }
+}
+.content {
+    &__title {
+        font-size: 24px;
+        line-height: 29px;
+        margin-bottom: 20px;
+    }
+    &__text {
+        font-size: 16px;
+        line-height: 20px;
+        color: $default;
+        margin-bottom: 50px;
+    }
+    &__list {
+        margin-left: 17px;
+    }
 }
